@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Resume</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f2f4f7;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        .resume {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #fff;
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Sidebar */
+        .sidebar {
+            background: #1f2937;
+            color: #fff;
+            padding: 35px 25px;
+        }
+
+        .profile {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .profile img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #fff;
+            margin-bottom: 15px;
+        }
+
+        .profile h1 {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+
+        .profile p {
+            color: #d1d5db;
+            font-size: 14px;
+        }
+
+        .sidebar-section {
+            margin-bottom: 30px;
+        }
+
+        .sidebar-section h2 {
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 2px solid #4b5563;
+            padding-bottom: 8px;
+            margin-bottom: 12px;
+        }
+
+        .sidebar-section p,
+        .sidebar-section li {
+            font-size: 13px;
+            color: #d1d5db;
+            margin-bottom: 7px;
+        }
+
+        .sidebar-section ul {
+            list-style: none;
+        }
+
+        /* Main Content */
+        .content {
+            padding: 40px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            color: #1f2937;
+            font-size: 20px;
+            border-bottom: 2px solid #2563eb;
+            padding-bottom: 7px;
+            margin-bottom: 18px;
+        }
+
+        .summary {
+            color: #555;
+            font-size: 14px;
+        }
+
+        .job {
+            margin-bottom: 22px;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            margin-bottom: 5px;
+        }
+
+        .job h3 {
+            font-size: 17px;
+            color: #111827;
+        }
+
+        .company {
+            color: #2563eb;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .date {
+            color: #777;
+            font-size: 13px;
+            white-space: nowrap;
+        }
+
+        .job ul {
+            padding-left: 20px;
+            color: #555;
+            font-size: 14px;
+        }
+
+        .education-item {
+            margin-bottom: 18px;
+        }
+
+        .education-item h3 {
+            font-size: 16px;
+        }
+
+        .education-item p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+
+        .skill {
+            background: #f3f4f6;
+            padding: 10px 12px;
+            border-radius: 5px;
+            font-size: 13px;
+        }
+
+        .project {
+            margin-bottom: 18px;
+        }
+
+        .project h3 {
+            color: #111827;
+            font-size: 16px;
+        }
+
+        .project p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        /* Print */
+        @media print {
+            body {
+                background: #fff;
+            }
+
+            .resume {
+                margin: 0;
+                box-shadow: none;
+            }
+        }
+
+        /* Mobile */
+        @media (max-width: 700px) {
+            .resume {
+                grid-template-columns: 1fr;
+                margin: 0;
+            }
+
+            .content {
+                padding: 25px;
+            }
+
+            .job-header {
+                flex-direction: column;
+                gap: 2px;
+            }
+
+            .skills {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="resume">
+
+    <!-- LEFT SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="profile">
+            <img src="https://via.placeholder.com/120" alt="Profile Photo">
+
+            <h1>Your Name</h1>
+            <p>Web Developer</p>
+        </div>
+
+        <div class="sidebar-section">
+            <h2>Contact</h2>
+
+            <p>📧 your.email@example.com</p>
+            <p>📱 +66 12 345 6789</p>
+            <p>📍 Bangkok, Thailand</p>
+            <p>🌐 yourwebsite.com</p>
+            <p>💼 linkedin.com/in/yourname</p>
+            <p>🐙 github.com/yourname</p>
+        </div>
+
+        <div class="sidebar-section">
+            <h2>Skills</h2>
+
+            <ul>
+                <li>HTML & CSS</li>
+                <li>JavaScript</li>
+                <li>React.js</li>
+                <li>Node.js</li>
+                <li>Python</li>
+                <li>Git & GitHub</li>
+                <li>Responsive Design</li>
+                <li>UI/UX Design</li>
+            </ul>
+        </div>
+
+        <div class="sidebar-section">
+            <h2>Languages</h2>
+
+            <ul>
+                <li>English — Fluent</li>
+                <li>Thai — Native</li>
+            </ul>
+        </div>
+
+        <div class="sidebar-section">
+            <h2>Interests</h2>
+
+            <ul>
+                <li>Technology</li>
+                <li>Photography</li>
+                <li>Travel</li>
+                <li>Reading</li>
+            </ul>
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="content">
+
+        <!-- PROFILE -->
+        <section class="section">
+            <h2>Profile</h2>
+
+            <p class="summary">
+                Motivated and detail-oriented web developer with 3+ years of
+                experience building responsive websites and web applications.
+                Passionate about creating clean, user-friendly interfaces and
+                solving complex technical problems.
+            </p>
+        </section>
+
+
+        <!-- EXPERIENCE -->
+        <section class="section">
+            <h2>Work Experience</h2>
+
+            <div class="job">
+
+                <div class="job-header">
+                    <div>
+                        <h3>Senior Web Developer</h3>
+                        <p class="company">ABC Technology Co., Ltd.</p>
+                    </div>
+
+                    <span class="date">2024 – Present</span>
+                </div>
+
+                <ul>
+                    <li>Developed responsive websites using HTML, CSS and JavaScript.</li>
+                    <li>Built reusable React components for multiple projects.</li>
+                    <li>Improved website performance and loading speed.</li>
+                    <li>Collaborated with designers and backend developers.</li>
+                </ul>
+
+            </div>
+
+
+            <div class="job">
+
+                <div class="job-header">
+                    <div>
+                        <h3>Junior Web Developer</h3>
+                        <p class="company">XYZ Digital Agency</p>
+                    </div>
+
+                    <span class="date">2022 – 2024</span>
+                </div>
+
+                <ul>
+                    <li>Created and maintained client websites.</li>
+                    <li>Implemented responsive layouts for mobile and desktop.</li>
+                    <li>Fixed bugs and improved existing applications.</li>
+                    <li>Worked with Git and collaborative development workflows.</li>
+                </ul>
+
+            </div>
+
+        </section>
+
+
+        <!-- EDUCATION -->
+        <section class="section">
+            <h2>Education</h2>
+
+            <div class="education-item">
+                <h3>Bachelor of Computer Science</h3>
+                <p>University Name</p>
+                <p>2018 – 2022</p>
+            </div>
+
+        </section>
+
+
+        <!-- PROJECTS -->
+        <section class="section">
+            <h2>Projects</h2>
+
+            <div class="project">
+                <h3>Personal Portfolio Website</h3>
+
+                <p>
+                    Designed and developed a responsive personal portfolio
+                    website using HTML, CSS and JavaScript.
+                </p>
+            </div>
+
+            <div class="project">
+                <h3>E-Commerce Website</h3>
+
+                <p>
+                    Developed a modern e-commerce interface with product
+                    listings, shopping cart functionality and responsive design.
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- SKILLS -->
+        <section class="section">
+            <h2>Technical Skills</h2>
+
+            <div class="skills">
+                <div class="skill">HTML5</div>
+                <div class="skill">CSS3</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">React.js</div>
+                <div class="skill">Node.js</div>
+                <div class="skill">Python</div>
+                <div class="skill">Git & GitHub</div>
+                <div class="skill">REST APIs</div>
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>
